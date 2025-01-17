@@ -23,6 +23,9 @@ export async function GET(request: NextRequest, { params }: Props) {
             orderBy: {
                 createdAt: 'desc'
             },
+            include: {  
+                card : true
+            }
         })
 
         return NextResponse.json({
@@ -33,6 +36,6 @@ export async function GET(request: NextRequest, { params }: Props) {
 
     } catch (error) {
         console.log("[LEARNED CARDS]", error)
-        return NextResponse.json({ error: "Internal Error2" }, { status: 500 })
+        return NextResponse.json({ error: "Internal Error" }, { status: 500 })
     }
 }
