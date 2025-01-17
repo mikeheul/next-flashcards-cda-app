@@ -9,10 +9,17 @@ export async function GET() {
             },
         })
 
-        return NextResponse.json(cards)
+        // return NextResponse.json(cards)
+        return NextResponse.json({
+            data: cards, //null si erreur
+            message: "Succesfully send the cards", // msg d'erreur si erreur
+            success: true, // false si erreur 
+        })
 
     } catch (error) {
         console.log("[CARDS]", error)
-        return NextResponse.json({ error: "Internal Error" }, { status: 500 })
+        return NextResponse.json({ error: "Internal Error2" }, { status: 500 })
     }
 }
+
+
