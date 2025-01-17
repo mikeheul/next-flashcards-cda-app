@@ -1,3 +1,41 @@
+# Prisma Models
+
+## Card
+
+id String
+question String
+answer String (Unique)
+id_user String
+createdAt DateTime
+updatedAt DateTime
+
+# API Documentation
+
+## Card
+
+### Get One 
+```
+"/api/...."
+```
+
+### Get All 
+```
+"/api/...."
+```
+
+### Create 
+```
+"/api/...."
+```
+
+### Edit 
+```
+"/api/...."
+```
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
