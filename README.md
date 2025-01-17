@@ -1,7 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prisma Models
+
+## Card
+
+| Field      | Type     | Constraints |
+|------------|----------|-------------|
+| id         | String   |             |
+| question   | String   |   Unique    |
+| answer     | String   |             |
+| id_user    | String   |             |
+| createdAt  | DateTime |             |
+| updatedAt  | DateTime |             |
+
+# API Documentation
+
+## Card
+
+### Get One (GET)
+```
+"/api/flashcard/$id"
+```
+
+### Get All (GET)
+```
+"/api/flashcard"
+```
+
+### Get All From One User (GET)
+```
+"/api/flashcard/user/$id_user"
+```
+
+### Create (POST)
+```
+"/api/flashcard"
+```
+<!-- 
+### Edit 
+```
+"/api/...."
+```
+-->
+
+
+
+
+
+
+
+
+
 
 ## Getting Started
 
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 First, run the development server:
 
 ```bash

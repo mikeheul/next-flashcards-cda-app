@@ -1,6 +1,7 @@
 import { db } from "@/lib/db";
 import { NextResponse, NextRequest } from "next/server";
 
+
 export async function GET() {
     try {
         const learnedCard = await db.learned.findMany({
@@ -11,16 +12,15 @@ export async function GET() {
 
         // return NextResponse.json(cards)
         return NextResponse.json({
-            data: learnedCard, 
-            message: "Succesfully send the learned cards", 
-            success: true, 
+            data: learnedCard, //null si erreur
+            message: "Succesfully send the learned cards", // msg d'erreur si erreur
+            success: true, // false si erreur 
         })
 
     } catch (error) {
         console.log("[LEARNED]", error)
         return NextResponse.json({ error: "Internal Error2" }, { status: 500 })
     }
-}
 
 // Marquer une carte comme "learned"
 export async function POST(request: NextRequest) {
