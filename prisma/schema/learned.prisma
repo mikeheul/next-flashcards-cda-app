@@ -1,10 +1,11 @@
-model Card {
+model Learned {
     id        String   @id @default(auto()) @map("_id") @db.ObjectId
-    question  String   @unique
-    answer    String
     id_user   String
+    id_card   String   @db.ObjectId
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    Learned   Learned[]
+    card      Card     @relation(fields: [id_card], references: [id])
+
+    @@unique([id_user, id_card])
 }
