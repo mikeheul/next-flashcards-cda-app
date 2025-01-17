@@ -2,12 +2,14 @@
 
 ## Card
 
-id String
-question String
-answer String (Unique)
-id_user String
-createdAt DateTime
-updatedAt DateTime
+| Field      | Type     | Constraints |
+|------------|----------|-------------|
+| id         | String   |             |
+| question   | String   |   Unique    |
+| answer     | String   |             |
+| id_user    | String   |             |
+| createdAt  | DateTime |             |
+| updatedAt  | DateTime |             |
 
 # API Documentation
 
