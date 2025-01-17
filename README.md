@@ -13,6 +13,15 @@
 
 # API Documentation
 
+Les données sont envoyés avec l'achitecture suivante :
+```
+{
+  data: données de l'objet,
+  message: le message de succès ou d'erreur,
+  success: le status de la requête : false (erreur) ou true (tout est bon)
+}
+```
+
 ## Card
 
 ### Get One (GET)
