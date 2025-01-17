@@ -63,12 +63,12 @@ Les données sont envoyés avec l'achitecture suivante :
 }
 ```
 
-<!--
-### Edit 
+
+### Edit (POST)
 ```
-"/api/...."
+"/api/flashcard/$id"
 ```
--->
+
 
 ## Learned
 
