@@ -34,6 +34,14 @@
 ```
 "/api/flashcard"
 ```
+
+```
+{
+  answer: string,
+  question: string,
+  id_user: string
+}
+```
 <!-- 
 ### Edit 
 ```
