@@ -10,6 +10,17 @@
 | id_user    | String   |             |
 | createdAt  | DateTime |             |
 | updatedAt  | DateTime |             |
+| Learned    | Array    |             |
+
+## Learned
+
+| Field      | Type     | Constraints |
+|------------|----------|-------------|
+| id         | String   |             |
+| id_user    | String   |   Unique    |
+| id_card    | String   |   Unique    |
+| createdAt  | DateTime |             |
+| updatedAt  | DateTime |             |
 
 # API Documentation
 
@@ -48,15 +59,32 @@ Les données sont envoyés avec l'achitecture suivante :
 {
   answer: string,
   question: string,
-  id_user: string
+  userId: string
 }
 ```
-<!-- 
+
+<!--
 ### Edit 
 ```
 "/api/...."
 ```
 -->
+
+## Learned
+
+### Get All (GET)
+```
+"/api/flashcard/learned"
+```
+
+### Get All From One User (GET)
+```
+"/api/flashcard/user/${id_user}/learned-flashcards"
+```
+
+
+ 
+
 
 
 
