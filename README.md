@@ -15,26 +15,26 @@
 
 ## Card
 
-### Get One 
+### Get One (GET)
 ```
-"/api/...."
-```
-
-### Get All 
-```
-"/api/...."
+"/api/flashcard/$id"
 ```
 
-### Create 
+### Get All (GET)
 ```
-"/api/...."
+"/api/flashcard"
 ```
 
+### Create (POST)
+```
+"/api/flashcard"
+```
+/*
 ### Edit 
 ```
 "/api/...."
 ```
-
+*/
 
 
 
