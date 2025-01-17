@@ -25,6 +25,11 @@
 "/api/flashcard"
 ```
 
+### Get All From One User (GET)
+```
+"/api/flashcard/user/$id_user"
+```
+
 ### Create (POST)
 ```
 "/api/flashcard"
